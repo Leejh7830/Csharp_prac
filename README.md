@@ -1,2 +1,0 @@
-# Csharp_prac
-practice

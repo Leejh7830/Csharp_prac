@@ -1,0 +1,12 @@
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\bin\Debug\220503 Hello.exe.config
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\bin\Debug\220503 Hello.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\bin\Debug\220503 Hello.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\220503 Hello.csproj.AssemblyReference.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\220503 Hello.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\_220503_Hello.Form1.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\_220503_Hello.Properties.Resources.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\220503 Hello.csproj.GenerateResource.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\220503 Hello.csproj.CoreCompileInputs.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\220503 Hello.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\220503 Hello.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\_220503_Hello.Form2.resources

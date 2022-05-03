@@ -1,0 +1,8 @@
+C:\Users\Lee\source\repos\c#\Csharp_work\220427_ex1\220427_ex03\bin\Debug\220427_ex03.exe.config
+C:\Users\Lee\source\repos\c#\Csharp_work\220427_ex1\220427_ex03\bin\Debug\220427_ex03.exe
+C:\Users\Lee\source\repos\c#\Csharp_work\220427_ex1\220427_ex03\bin\Debug\220427_ex03.pdb
+C:\Users\Lee\source\repos\c#\Csharp_work\220427_ex1\220427_ex03\obj\Debug\220427_ex03.csproj.AssemblyReference.cache
+C:\Users\Lee\source\repos\c#\Csharp_work\220427_ex1\220427_ex03\obj\Debug\220427_ex03.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lee\source\repos\c#\Csharp_work\220427_ex1\220427_ex03\obj\Debug\220427_ex03.csproj.CoreCompileInputs.cache
+C:\Users\Lee\source\repos\c#\Csharp_work\220427_ex1\220427_ex03\obj\Debug\220427_ex03.exe
+C:\Users\Lee\source\repos\c#\Csharp_work\220427_ex1\220427_ex03\obj\Debug\220427_ex03.pdb

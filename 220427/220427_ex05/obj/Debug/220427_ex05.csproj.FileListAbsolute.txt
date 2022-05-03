@@ -1,0 +1,8 @@
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220427\220427_ex05\bin\Debug\220427_ex05.exe.config
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220427\220427_ex05\bin\Debug\220427_ex05.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220427\220427_ex05\bin\Debug\220427_ex05.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220427\220427_ex05\obj\Debug\220427_ex05.csproj.AssemblyReference.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220427\220427_ex05\obj\Debug\220427_ex05.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220427\220427_ex05\obj\Debug\220427_ex05.csproj.CoreCompileInputs.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220427\220427_ex05\obj\Debug\220427_ex05.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220427\220427_ex05\obj\Debug\220427_ex05.pdb
