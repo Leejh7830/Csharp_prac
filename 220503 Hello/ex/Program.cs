@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _220503_Hello
+namespace ex
 {
     internal static class Program
     {
@@ -16,9 +16,7 @@ namespace _220503_Hello
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new Form1());
-            // Application.Run(new Form2());
-            Application.Run(new StudentForm());
+            Application.Run(new Form1());
         }
     }
 }
