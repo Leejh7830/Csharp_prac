@@ -1,0 +1,10 @@
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\bin\Debug\Method.exe.config
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\bin\Debug\Method.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\bin\Debug\Method.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\obj\Debug\Method.csproj.AssemblyReference.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\obj\Debug\Method.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\obj\Debug\Method.Properties.Resources.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\obj\Debug\Method.csproj.GenerateResource.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\obj\Debug\Method.csproj.CoreCompileInputs.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\obj\Debug\Method.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\Method\obj\Debug\Method.pdb

@@ -10,3 +10,4 @@ C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hell
 C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\220503 Hello.exe
 C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\220503 Hello.pdb
 C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\_220503_Hello.Form2.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\220503 Hello\obj\Debug\_220503_Hello.StudentForm.resources

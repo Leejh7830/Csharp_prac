@@ -52,5 +52,29 @@ namespace _220503_Hello
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // SortedSet => 중복제거,정렬
+            List<int> numbers = new List<int>();
+            for(int i=0; i<7; i++)
+            {
+                Random r = new Random();
+                int num = r.Next(1, 46);
+                if(numbers.Contains(num))
+                {
+                    i--;
+                } else
+                {
+                    numbers.Add(num);
+                }
+            }
+            numbers.Sort();
+            label1.Text = " ";
+            foreach (var item in numbers)
+            {
+                label1.Text += item + " ";
+            }
+        }
     }
 }

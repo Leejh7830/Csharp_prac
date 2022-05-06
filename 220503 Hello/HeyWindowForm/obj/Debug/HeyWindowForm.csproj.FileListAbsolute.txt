@@ -1,0 +1,11 @@
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\bin\Debug\HeyWindowForm.exe.config
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\bin\Debug\HeyWindowForm.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\bin\Debug\HeyWindowForm.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\obj\Debug\HeyWindowForm.csproj.AssemblyReference.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\obj\Debug\HeyWindowForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\obj\Debug\HeyWindowForm.Form1.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\obj\Debug\HeyWindowForm.Properties.Resources.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\obj\Debug\HeyWindowForm.csproj.GenerateResource.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\obj\Debug\HeyWindowForm.csproj.CoreCompileInputs.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\obj\Debug\HeyWindowForm.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\220503 Hello\HeyWindowForm\obj\Debug\HeyWindowForm.pdb

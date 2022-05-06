@@ -17,15 +17,36 @@ namespace _220503_Hello
         public Form1()
         {
             InitializeComponent();
-            
+
+            List<int> numbers = new List<int>();
+
+            for(int i=0; i<4; i++)
+            {
+                Random rand = new Random();
+                int num = rand.Next(1, 100);
+                if(numbers.Contains(num))
+                {
+                    i--;
+                    continue;
+                }
+                numbers.Add(num);
+            }
+            numbers.Sort(); // 정렬
+            button1.Text = numbers[0].ToString();
+            button2.Text = numbers[1].ToString();
+            button3.Text = numbers[2].ToString();
+            button4.Text = numbers[3].ToString();
+
+            /*
             Random r = new Random();
             button1.Text = r.Next(1, 100).ToString();
-            button5.Text = button1.Text;
             button2.Text = r.Next(1, 100).ToString();
-            button6.Text = button2.Text;
             button3.Text = r.Next(1, 100).ToString();
-            button7.Text = button3.Text;
             button4.Text = r.Next(1, 100).ToString();
+            */
+            button5.Text = button1.Text;
+            button6.Text = button2.Text;
+            button7.Text = button3.Text;
             button8.Text = button4.Text;
         }
 
