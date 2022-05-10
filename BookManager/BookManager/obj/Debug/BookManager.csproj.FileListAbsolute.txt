@@ -1,0 +1,13 @@
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\bin\Debug\BookManager.exe.config
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\bin\Debug\BookManager.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\bin\Debug\BookManager.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.csproj.AssemblyReference.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.MainForm.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.Properties.Resources.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.csproj.GenerateResource.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.csproj.CoreCompileInputs.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.ManageBook.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\BookManager\BookManager\obj\Debug\BookManager.ManageUser.resources
