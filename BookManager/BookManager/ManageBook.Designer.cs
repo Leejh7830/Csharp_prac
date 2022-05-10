@@ -68,6 +68,7 @@
             this.dataGridView_books.RowTemplate.Height = 23;
             this.dataGridView_books.Size = new System.Drawing.Size(667, 164);
             this.dataGridView_books.TabIndex = 0;
+            this.dataGridView_books.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_books_CellClick);
             // 
             // groupBox1
             // 
@@ -125,6 +126,7 @@
             this.button_delete.TabIndex = 6;
             this.button_delete.Text = "삭제";
             this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
             // 
             // button_modify
             // 
@@ -134,6 +136,7 @@
             this.button_modify.TabIndex = 5;
             this.button_modify.Text = "수정";
             this.button_modify.UseVisualStyleBackColor = true;
+            this.button_modify.Click += new System.EventHandler(this.button_modify_Click);
             // 
             // button_add
             // 
@@ -143,6 +146,7 @@
             this.button_add.TabIndex = 4;
             this.button_add.Text = "추가";
             this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
             // label4
             // 

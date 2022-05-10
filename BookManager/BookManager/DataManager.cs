@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace BookManager
 {
@@ -53,8 +54,37 @@ namespace BookManager
         {
             try
             {
+                string booksOutput = File.ReadAllText($"./{BOOKS}.xml"); // books.xml에서 읽어옴
+                XElement BooksXElement = XElement.Parse(booksOutput); // xml자료형태로 형변환
 
-            } catch (Exception ex) // 파일읽기 실패하면 save
+                // LINQ
+                // Descendants = 자손, item => 객체하나하나, Element 그 객체의 값 하나하나
+                Books = (from item in BooksXElement.Descendants(BOOK)
+                         select new Book()
+                         { 
+                             Isbn = item.Element(ISBN).Value,
+                             Name = item.Element(NAME).Value,
+                             Publisher = item.Element(PUBLISHER).Value,
+                             Page = int.Parse(item.Element(PAGE).Value),
+                             UserId = int.Parse(item.Element(USERID).Value),
+                             UserName = item.Element(USERNAME).Value,
+                             BorrowedAt = DateTime.Parse(item.Element(BORROWEDAT).Value),
+                             isBorrowed = item.Element(ISBORROWED).Value != "0" ? true : false
+                          }).ToList<Book>();
+                // 위아래 같은 결과
+                string usersOutput = File.ReadAllText($"./{USERS}.xml");
+                XElement UsersXElement = XElement.Parse(usersOutput);
+                Users.Clear();
+                foreach(var item in UsersXElement.Descendants(USER))
+                {
+                    User temp = new User();
+                    temp.Name = item.Element(NAME).Value;
+                    temp.Id = int.Parse(item.Element(UID).Value);
+                    Users.Add(temp);
+                }
+
+            }
+            catch (Exception ex) // 파일읽기 실패하면 save 하고 load
             {
                 Save();
                 Load();

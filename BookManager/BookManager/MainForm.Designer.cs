@@ -33,7 +33,7 @@
             this.도서관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.사용자관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.labelallDelayedBook = new System.Windows.Forms.Label();
+            this.label_allDelayedBook = new System.Windows.Forms.Label();
             this.label_allBorrowedBook = new System.Windows.Forms.Label();
             this.label_allUserCount = new System.Windows.Forms.Label();
             this.label_allBookCount = new System.Windows.Forms.Label();
@@ -92,7 +92,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.labelallDelayedBook);
+            this.groupBox1.Controls.Add(this.label_allDelayedBook);
             this.groupBox1.Controls.Add(this.label_allBorrowedBook);
             this.groupBox1.Controls.Add(this.label_allUserCount);
             this.groupBox1.Controls.Add(this.label_allBookCount);
@@ -107,14 +107,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "도서관 현황";
             // 
-            // labelallDelayedBook
+            // label_allDelayedBook
             // 
-            this.labelallDelayedBook.AutoSize = true;
-            this.labelallDelayedBook.Location = new System.Drawing.Point(160, 99);
-            this.labelallDelayedBook.Name = "labelallDelayedBook";
-            this.labelallDelayedBook.Size = new System.Drawing.Size(11, 12);
-            this.labelallDelayedBook.TabIndex = 7;
-            this.labelallDelayedBook.Text = "-";
+            this.label_allDelayedBook.AutoSize = true;
+            this.label_allDelayedBook.Location = new System.Drawing.Point(160, 99);
+            this.label_allDelayedBook.Name = "label_allDelayedBook";
+            this.label_allDelayedBook.Size = new System.Drawing.Size(11, 12);
+            this.label_allDelayedBook.TabIndex = 7;
+            this.label_allDelayedBook.Text = "-";
             // 
             // label_allBorrowedBook
             // 
@@ -164,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 56);
+            this.label2.Location = new System.Drawing.Point(58, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 12);
             this.label2.TabIndex = 1;
@@ -173,7 +173,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 33);
+            this.label1.Location = new System.Drawing.Point(42, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 12);
             this.label1.TabIndex = 0;
@@ -364,7 +364,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label labelallDelayedBook;
+        private System.Windows.Forms.Label label_allDelayedBook;
         private System.Windows.Forms.Label label_allBorrowedBook;
         private System.Windows.Forms.Label label_allUserCount;
         private System.Windows.Forms.Label label_allBookCount;
