@@ -1,0 +1,11 @@
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\bin\Debug\ParkingCarProgram.exe.config
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\bin\Debug\ParkingCarProgram.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\bin\Debug\ParkingCarProgram.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\obj\Debug\ParkingCarProgram.csproj.AssemblyReference.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\obj\Debug\ParkingCarProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\obj\Debug\ParkingCarProgram.MainForm.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\obj\Debug\ParkingCarProgram.Properties.Resources.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\obj\Debug\ParkingCarProgram.csproj.GenerateResource.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\obj\Debug\ParkingCarProgram.csproj.CoreCompileInputs.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\obj\Debug\ParkingCarProgram.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\ParkingCarProgram\ParkingCarProgram\obj\Debug\ParkingCarProgram.pdb
