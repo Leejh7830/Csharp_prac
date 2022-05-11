@@ -40,7 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox_parkinSpot = new System.Windows.Forms.TextBox();
+            this.textBox_parkingSpot = new System.Windows.Forms.TextBox();
             this.textBox_carNumber = new System.Windows.Forms.TextBox();
             this.textBox_driverName = new System.Windows.Forms.TextBox();
             this.textBox_phoneNumber = new System.Windows.Forms.TextBox();
@@ -65,7 +65,7 @@
             this.groupBox1.Controls.Add(this.textBox_phoneNumber);
             this.groupBox1.Controls.Add(this.textBox_driverName);
             this.groupBox1.Controls.Add(this.textBox_carNumber);
-            this.groupBox1.Controls.Add(this.textBox_parkinSpot);
+            this.groupBox1.Controls.Add(this.textBox_parkingSpot);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -137,6 +137,7 @@
             this.dataGridView_parkingManager.RowTemplate.Height = 23;
             this.dataGridView_parkingManager.Size = new System.Drawing.Size(764, 137);
             this.dataGridView_parkingManager.TabIndex = 0;
+            this.dataGridView_parkingManager.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_parkingManager_CellClick);
             // 
             // label2
             // 
@@ -174,12 +175,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "전화번호";
             // 
-            // textBox_parkinSpot
+            // textBox_parkingSpot
             // 
-            this.textBox_parkinSpot.Location = new System.Drawing.Point(91, 24);
-            this.textBox_parkinSpot.Name = "textBox_parkinSpot";
-            this.textBox_parkinSpot.Size = new System.Drawing.Size(100, 21);
-            this.textBox_parkinSpot.TabIndex = 9;
+            this.textBox_parkingSpot.Location = new System.Drawing.Point(91, 24);
+            this.textBox_parkingSpot.Name = "textBox_parkingSpot";
+            this.textBox_parkingSpot.Size = new System.Drawing.Size(100, 21);
+            this.textBox_parkingSpot.TabIndex = 9;
             // 
             // textBox_carNumber
             // 
@@ -210,6 +211,7 @@
             this.button_parking.TabIndex = 13;
             this.button_parking.Text = "주차";
             this.button_parking.UseVisualStyleBackColor = true;
+            this.button_parking.Click += new System.EventHandler(this.button_parking_Click);
             // 
             // button_parkExit
             // 
@@ -219,6 +221,7 @@
             this.button_parkExit.TabIndex = 14;
             this.button_parkExit.Text = "출차";
             this.button_parkExit.UseVisualStyleBackColor = true;
+            this.button_parkExit.Click += new System.EventHandler(this.button_parkExit_Click);
             // 
             // button_find
             // 
@@ -228,6 +231,7 @@
             this.button_find.TabIndex = 15;
             this.button_find.Text = "해당 공간 조회";
             this.button_find.UseVisualStyleBackColor = true;
+            this.button_find.Click += new System.EventHandler(this.button_find_Click);
             // 
             // button_add
             // 
@@ -304,7 +308,7 @@
         private System.Windows.Forms.TextBox textBox_phoneNumber;
         private System.Windows.Forms.TextBox textBox_driverName;
         private System.Windows.Forms.TextBox textBox_carNumber;
-        private System.Windows.Forms.TextBox textBox_parkinSpot;
+        private System.Windows.Forms.TextBox textBox_parkingSpot;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

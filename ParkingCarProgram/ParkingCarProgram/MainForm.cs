@@ -18,7 +18,7 @@ namespace ParkingCarProgram
             try
             {
                 //프로그램을 시작하면 가장 첫번째 주차공간에 있는 정보를 적음
-                textBox_parkinSpot.Text = DataManager.Cars[0].ParkingSpot.ToString(); // 여기서 static DataManager 호출
+                textBox_parkingSpot.Text = DataManager.Cars[0].ParkingSpot.ToString(); // 여기서 static DataManager 호출
                 textBox_carNumber.Text = DataManager.Cars[0].CarNumber;
                 textBox_driverName.Text = DataManager.Cars[0].DriverName;
                 textBox_phoneNumber.Text = DataManager.Cars[0].PhoneNumber;
@@ -88,7 +88,7 @@ namespace ParkingCarProgram
 
         private void WriteLog(string contents)
         {
-            string logContents = $"[{DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff")}]{contents}";
+            string logContents = $"[{DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff")}] {contents}";
             DataManager.PrintLog(logContents);
             MessageBox.Show(contents);
             listBox_logPrint.Items.Insert(0, logContents); // 최신내용이 위로 올라감, 0 안적으면 반대
@@ -102,5 +102,126 @@ namespace ParkingCarProgram
             if (DataManager.Cars.Count > 0)
                 dataGridView_parkingManager.DataSource = DataManager.Cars;
         }
+        
+        private void dataGridView_parkingManager_CellClick(object sender, DataGridViewCellEventArgs e)
+            //그리드뷰 정보 가져오기
+        {
+            ParkingCar car = dataGridView_parkingManager.CurrentRow.DataBoundItem as ParkingCar;
+            textBox_parkingSpot.Text = car.ParkingSpot.ToString();
+            textBox_carNumber.Text = car.CarNumber;
+            textBox_driverName.Text = car.DriverName;
+            textBox_phoneNumber.Text = car.PhoneNumber;
+        }
+
+        private void button_parking_Click(object sender, EventArgs e)
+        {
+            if (textBox_parkingSpot.Text.Trim()=="")
+                MessageBox.Show("주차공간번호 입력하세요");
+            else if (textBox_carNumber.Text.Trim()=="")
+                MessageBox.Show("차량번호 입력하세요");
+            else
+            {
+                try
+                {
+                    ParkingCar car = DataManager.Cars.Single(x => x.ParkingSpot.ToString() == textBox_parkingSpot.Text);
+                    if (car.CarNumber.Trim()!="")
+                        MessageBox.Show("이미 해당 공간에 차가 있음");
+                    else
+                    {
+                        car.CarNumber = textBox_carNumber.Text;
+                        car.DriverName = textBox_driverName.Text;
+                        car.PhoneNumber = textBox_phoneNumber.Text;
+                        car.ParkingTime = DateTime.Now;
+
+                        dataGridView_parkingManager.DataSource = null;
+                        dataGridView_parkingManager.DataSource = DataManager.Cars;
+
+                        DataManager.Save(car.ParkingSpot, car.CarNumber, car.DriverName, car.PhoneNumber); //주차
+                        string contents = $"주차공간 {textBox_parkingSpot.Text}에 {textBox_carNumber.Text}차를 주차했습니다.";
+                        WriteLog(contents); 
+                    }
+                }
+                catch (Exception)
+                {
+                    string contents = $"주차공간 {textBox_parkingSpot.Text}은/는 없습니다.";
+                    WriteLog(contents);
+                }
+            }
+        }
+
+        private void button_parkExit_Click(object sender, EventArgs e)
+        {
+            if (textBox_parkingSpot.Text.Trim() == "")
+                MessageBox.Show("주차공간번호 입력하세요");
+            else
+            {
+                try
+                {
+                    ParkingCar car = DataManager.Cars.Single(x => x.ParkingSpot.ToString() == textBox_parkingSpot.Text);
+                    if (car.CarNumber=="")
+                    {
+                        WriteLog(car.ParkingSpot + "에 이미 차가 없습니다.");
+                        return;
+                    }
+
+                    string oldCar = car.CarNumber; // 주차되었던 차
+                    car.CarNumber = "";
+                    car.DriverName = "";
+                    car.PhoneNumber = "";
+                    car.ParkingTime = new DateTime();
+
+                    dataGridView_parkingManager.DataSource = null;
+                    dataGridView_parkingManager.DataSource = DataManager.Cars;
+
+                    DataManager.Save(car.ParkingSpot, car.CarNumber, car.DriverName, car.PhoneNumber,true); // 출차
+                    string contents = $"주차공간 {textBox_parkingSpot.Text}에 {oldCar}차를 출차했습니다.";
+                    WriteLog(contents);
+                }
+                catch (Exception)
+                {
+                    string contents = $"주차공간 {textBox_parkingSpot.Text}은/는 없습니다.";
+                    WriteLog(contents);
+                }
+            }
+        }
+        private void button_find_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int parkingSpot = int.Parse(textBox_spotNumber.Text);
+                string ParkingCar = findParkingCar(parkingSpot);
+                string contents;
+                if (ParkingCar == "해당 주차공간 없음!")
+                {
+                    contents = $"해당 주차공간은 존재하지 않습니다. ({parkingSpot})";
+                }
+                else if (ParkingCar != "")
+                {
+                    contents = $"해당 주차공간 {parkingSpot}에 주차된 차는 {ParkingCar}입니다.";
+                }
+                else
+                {
+                    contents = $"주차공간 {parkingSpot}에는 주차된 차가 없습니다.";
+                }
+                WriteLog(contents);
+            }
+            catch (Exception)
+            {
+
+            }
+            
+        }
+
+        private string findParkingCar(int parkingSpot)
+        {
+            foreach (var item in DataManager.Cars)
+            {
+                if (item.ParkingSpot == parkingSpot)
+                    return item.CarNumber;
+            }
+            return "해당주차공간 없음";
+        }
+
+
     }
 }

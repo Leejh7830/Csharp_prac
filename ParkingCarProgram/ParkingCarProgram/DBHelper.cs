@@ -109,29 +109,30 @@ namespace ParkingCarProgram
         }
 
         public static void updateQuery(int parkingSpot, string carNumber,
-            string driverName, string phoneNumber, bool isRemove=false)
+            string driverName, string phoneNumber, bool isRemove = false)
         {
             try
             {
                 ConnectDB();
                 string sqlcommand;
+
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandType = CommandType.Text;
-                if (isRemove) // 출차
+                if (isRemove) //출차
                 {
-                    sqlcommand = "update ParkingCar set carNumber='',driverName='',phoneNumber=''," +
-                        " Parkingtime=null where ParkingSpot=@p1";
+                    sqlcommand = "update ParkingCar set carNumber='', driverName='', phoneNumber=''," +
+                        " ParkingTime=null where ParkingSpot=@p1";
                     cmd.Parameters.AddWithValue("@p1", parkingSpot);
                 }
                 else // 주차
                 {
                     sqlcommand = "update ParkingCar set carNumber=@p1, driverName=@p2, phoneNumber=@p3," +
-                        " Parkingtime=@p4 where ParkingSpot=@p5";
+                          " ParkingTime=@p4 where ParkingSpot=@p5";
                     cmd.Parameters.AddWithValue("@p1", carNumber);
                     cmd.Parameters.AddWithValue("@p2", driverName);
                     cmd.Parameters.AddWithValue("@p3", phoneNumber);
-                    cmd.Parameters.AddWithValue("@p4", DateTime.Now.ToString("yyyy-MM-DataSetDateTime HH:MissingMappingAction:ss.fff"));
+                    cmd.Parameters.AddWithValue("@p4", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
                     cmd.Parameters.AddWithValue("@p5", parkingSpot);
                 }
                 cmd.CommandText = sqlcommand;
@@ -140,6 +141,10 @@ namespace ParkingCarProgram
             catch (Exception)
             {
                 System.Windows.Forms.MessageBox.Show("update 오류");
+            }
+            finally
+            {
+                conn.Close();
             }
         }
     }
