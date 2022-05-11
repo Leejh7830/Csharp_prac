@@ -45,7 +45,7 @@
             this.button_return = new System.Windows.Forms.Button();
             this.button_borrow = new System.Windows.Forms.Button();
             this.textBox_id = new System.Windows.Forms.TextBox();
-            this.textBox_name = new System.Windows.Forms.TextBox();
+            this.textBox_bookName = new System.Windows.Forms.TextBox();
             this.textBox_isbn = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -159,7 +159,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 12);
             this.label3.TabIndex = 2;
-            this.label3.Text = "대출중인 도서의 수";
+            this.label3.Text = "대여중인 도서의 수";
             // 
             // label2
             // 
@@ -184,7 +184,7 @@
             this.groupBox2.Controls.Add(this.button_return);
             this.groupBox2.Controls.Add(this.button_borrow);
             this.groupBox2.Controls.Add(this.textBox_id);
-            this.groupBox2.Controls.Add(this.textBox_name);
+            this.groupBox2.Controls.Add(this.textBox_bookName);
             this.groupBox2.Controls.Add(this.textBox_isbn);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
@@ -221,12 +221,12 @@
             this.textBox_id.Size = new System.Drawing.Size(396, 21);
             this.textBox_id.TabIndex = 5;
             // 
-            // textBox_name
+            // textBox_bookName
             // 
-            this.textBox_name.Location = new System.Drawing.Point(83, 71);
-            this.textBox_name.Name = "textBox_name";
-            this.textBox_name.Size = new System.Drawing.Size(396, 21);
-            this.textBox_name.TabIndex = 4;
+            this.textBox_bookName.Location = new System.Drawing.Point(83, 71);
+            this.textBox_bookName.Name = "textBox_bookName";
+            this.textBox_bookName.Size = new System.Drawing.Size(396, 21);
+            this.textBox_bookName.TabIndex = 4;
             // 
             // textBox_isbn
             // 
@@ -371,7 +371,7 @@
         private System.Windows.Forms.Button button_return;
         private System.Windows.Forms.Button button_borrow;
         private System.Windows.Forms.TextBox textBox_id;
-        private System.Windows.Forms.TextBox textBox_name;
+        private System.Windows.Forms.TextBox textBox_bookName;
         private System.Windows.Forms.TextBox textBox_isbn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

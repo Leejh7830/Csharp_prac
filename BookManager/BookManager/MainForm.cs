@@ -16,7 +16,103 @@ namespace BookManager
         {
             InitializeComponent();
             label_now.Text = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분 ss초");
+
+            dataGridView_bookManager.CellClick += delegate (object s, DataGridViewCellEventArgs e)
+            {
+                Book book = dataGridView_bookManager.CurrentRow.DataBoundItem as Book;
+                textBox_isbn.Text = book.Isbn;
+                textBox_bookName.Text = book.Name;
+            };
+
+            dataGridView_userManager.CellClick += (s, e) =>
+            {
+                User user = dataGridView_userManager.CurrentRow.DataBoundItem as User;
+                textBox_id.Text = user.Id.ToString();
+            };
+
+            // 대여
+            button_borrow.Click += Button_borrow_Click;
+
+            // 반납
+            button_return.Click += Button_return_Click;
+
             refreshScreen();
+        }
+
+        private void Button_return_Click(object sender, EventArgs e)
+        {
+            // throw new NotImplementedException();
+            if (textBox_isbn.Text.Trim() == "") // Trim : 양 옆 공백제거
+                MessageBox.Show("isbn 입력");
+            else
+            {
+                try
+                {
+                    Book book = DataManager.Books.Single(x => x.Isbn == textBox_isbn.Text);
+                    if (book.isBorrowed)
+                    {
+                        DateTime oldDay = book.BorrowedAt; // 연체여부체크
+                        book.UserId = 0;
+                        book.UserName = "";
+                        book.isBorrowed = false;
+                        book.BorrowedAt = new DateTime();
+
+                        DataManager.Save();
+                        refreshScreen();
+
+                        // 연체체크
+                        TimeSpan timeDiff = DateTime.Now - oldDay;
+                        if (timeDiff.Days > 7)
+                            MessageBox.Show(book.Name+"은 연체 상태로 반납");
+                        else
+                            MessageBox.Show(book.Name+"은 정상 반납");
+                    } 
+                    else 
+                    {
+                        MessageBox.Show("대여 상태아닙니다.");
+                    }
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("없는 책입니다.");
+                }
+            }
+        }
+
+        private void Button_borrow_Click(object sender, EventArgs e)
+        {
+            // throw new NotImplementedException();
+            if (textBox_isbn.Text.Trim() == "") // Trim : 양 옆 공백제거
+                MessageBox.Show("isbn 입력");
+            else if (textBox_id.Text.Trim() == "")
+                MessageBox.Show("id 입력");
+            else
+            {
+                try
+                {
+                    Book book = DataManager.Books.Single(x => x.Isbn == textBox_isbn.Text);
+                    if (book.isBorrowed)
+                    {
+                        MessageBox.Show("이미 빌림!!");
+                        return;
+                    }
+                    //
+                    User user = DataManager.Users.Single(x=>x.Id.ToString() == textBox_id.Text);
+                    book.UserId = user.Id;
+                    book.UserName = user.Name;
+                    book.isBorrowed = true;
+                    book.BorrowedAt = DateTime.Now;
+                    DataManager.Save();
+
+                    refreshScreen();
+                    MessageBox.Show($"{book.Name}은 {user.Name}님께 대여됨");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("존재하지 않는 도서나 사용자");
+                }
+            }
         }
 
         private void refreshScreen()
@@ -58,6 +154,7 @@ namespace BookManager
         private void 사용자관리ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ManageUser().ShowDialog();
+            refreshScreen();
         }
     }
 }
