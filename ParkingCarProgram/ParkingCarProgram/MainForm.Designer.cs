@@ -35,7 +35,7 @@
             this.listBox_logPrint = new System.Windows.Forms.ListBox();
             this.label_now = new System.Windows.Forms.Label();
             this.timer_now = new System.Windows.Forms.Timer(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_parkingManager = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_parkingManager)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -94,7 +94,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.dataGridView_parkingManager);
             this.groupBox3.Location = new System.Drawing.Point(12, 155);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(776, 163);
@@ -124,18 +124,19 @@
             // 
             this.timer_now.Enabled = true;
             this.timer_now.Interval = 1000;
+            this.timer_now.Tick += new System.EventHandler(this.timer_now_Tick);
             // 
-            // dataGridView1
+            // dataGridView_parkingManager
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(764, 137);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView_parkingManager.AllowUserToAddRows = false;
+            this.dataGridView_parkingManager.AllowUserToDeleteRows = false;
+            this.dataGridView_parkingManager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_parkingManager.Location = new System.Drawing.Point(6, 20);
+            this.dataGridView_parkingManager.Name = "dataGridView_parkingManager";
+            this.dataGridView_parkingManager.ReadOnly = true;
+            this.dataGridView_parkingManager.RowTemplate.Height = 23;
+            this.dataGridView_parkingManager.Size = new System.Drawing.Size(764, 137);
+            this.dataGridView_parkingManager.TabIndex = 0;
             // 
             // label2
             // 
@@ -270,6 +271,7 @@
             this.button_refresh.TabIndex = 19;
             this.button_refresh.Text = "전체 갱신";
             this.button_refresh.UseVisualStyleBackColor = true;
+            this.button_refresh.Click += new System.EventHandler(this.button_refresh_Click);
             // 
             // MainForm
             // 
@@ -288,7 +290,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_parkingManager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,7 +317,7 @@
         private System.Windows.Forms.Button button_find;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_parkingManager;
         private System.Windows.Forms.ListBox listBox_logPrint;
         private System.Windows.Forms.Label label_now;
         private System.Windows.Forms.Timer timer_now;
