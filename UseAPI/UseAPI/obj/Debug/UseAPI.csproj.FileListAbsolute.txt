@@ -1,0 +1,14 @@
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\bin\Debug\UseAPI.exe.config
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\bin\Debug\UseAPI.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\bin\Debug\UseAPI.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.csproj.AssemblyReference.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.Form1.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.Properties.Resources.resources
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.csproj.GenerateResource.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.csproj.CoreCompileInputs.cache
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.exe
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.pdb
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.csproj.CopyComplete

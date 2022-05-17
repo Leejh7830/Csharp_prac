@@ -12,7 +12,7 @@ namespace ParkingCarProgram
     {
         public static List<ParkingCar> Cars = new List<ParkingCar>();
 
-        static DataManager()
+        static DataManager() // 정적생성자 (한번만 호출)
         {
             Load();
         }
