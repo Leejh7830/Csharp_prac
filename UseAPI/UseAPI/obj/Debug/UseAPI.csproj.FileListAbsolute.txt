@@ -12,3 +12,4 @@ C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\
 C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.csproj.CopyComplete
+C:\Users\Lee\Desktop\DEV\C#\source\repos\c#\Csharp_work\UseAPI\UseAPI\obj\Debug\UseAPI.Form2.resources

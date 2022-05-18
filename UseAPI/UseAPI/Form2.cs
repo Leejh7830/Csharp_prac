@@ -16,5 +16,33 @@ namespace UseAPI
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            List<Locale> locales = KaKaoAPI.Search(textBox1.Text);
+            listBox1.Items.Clear();
+            foreach(Locale item in locales)
+            {
+                listBox1.Items.Add(item);
+            }
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            // button1 클릭한 것과 같은
+            if (e.KeyCode == Keys.Enter)
+                button1.PerformClick();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == -1)
+                return;
+
+            Locale ml = listBox1.SelectedItem as Locale; // 클릭한 부분은 Locale로 변경
+            object[] pos = new object[] {ml.Lat, ml.Lng};
+            HtmlDocument hdoc = webBrowser1.Document;
+            hdoc.InvokeScript("setCenter", pos);
+        }
     }
 }
